@@ -10,7 +10,6 @@
   "dependencies": {
     "classnames": "2.2.6",
     "date-fns": "2.16.1",
-    "fsevents": "^2.2.1",
     "next": "^10.0.1",
     "node-gyp": "^7.1.2",
     "react": "^17.0.1",
@@ -23,5 +22,8 @@
     "dotenv": "8.2.0",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.9.6"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.2.1"
   }
 }
