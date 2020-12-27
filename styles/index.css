@@ -3,3 +3,10 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+@layer base {
+    .hero-text {
+        -webkit-text-stroke: 2.5px #000000;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+  }
