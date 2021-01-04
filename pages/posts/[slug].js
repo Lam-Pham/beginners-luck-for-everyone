@@ -3,6 +3,7 @@ import { renderMetaTags, useQuerySubscription } from "react-datocms";
 import Container from "../../components/container";
 import Header from "../../components/header";
 import Layout from "../../components/layout";
+import Footer from "../../components/footer";
 import MoreStories from "../../components/more-stories";
 import PostBody from "../../components/post-body";
 import PostHeader from "../../components/post-header";
@@ -117,9 +118,8 @@ export default function Post({ subscription, preview }) {
           />
           <PostBody content={post.content} />
         </article>
-        <SectionSeparator />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </Container>
+      <Footer/>
     </Layout>
   );
 }

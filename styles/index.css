@@ -9,4 +9,8 @@
         -webkit-text-stroke: 2.5px #000000;
         -webkit-font-smoothing: subpixel-antialiased;
     }
+
+    .bg-off-white {
+        background-color: #f4f1ec;
+    }
   }

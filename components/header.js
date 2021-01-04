@@ -18,23 +18,27 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <div className="grid grid-cols-8 mt-8 mb-24">
+    <div className="grid grid-cols-7 mt-8 mb-24">
       <div className="col-start-1 col-span-1">
         <Link href="/">
-          <img className="cursor-pointer w-20 h-24 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110"src="https://www.datocms-assets.com/39720/1609012456-kobejumpshot.png"></img>
+          <img className="cursor-pointer w-20 h-24 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110"src="https://www.datocms-assets.com/39720/1609114449-kobejumpshot-removebg-preview.png"></img>
         </Link>
       </div>
-      <div className=" cursor-pointer font-bold underline col-start-4 col-span-1 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
-        <Link href="/">     
-          <h3 className="">POWER RANKINGS</h3>     
+      <div className="cursor-pointer font-bold underline col-start-2 col-span-1 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
+        <Link href="/posts/power-rankings">     
+          <h2 className="">POWER RANKINGS</h2>     
         </Link>
       </div>
-      <div className="cursor-pointer font-bold underline col-start-5 col-span-2 ml-5 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
-        <Link href="/">     
-          <h3 className="">MEET THE OWNERS</h3>     
+      <div className="cursor-pointer font-bold underline col-start-3 col-span-1 ml-1 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
+        <Link href="/posts/gm-of-the-week">     
+          <h2 className="">GM OF THE WEEK</h2>     
         </Link>
       </div>
-
+      <div className="cursor-pointer font-bold underline col-start-4 col-span-1 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
+        <Link href="/posts">     
+          <h2 className="">ALL POSTS</h2>     
+        </Link>
+      </div>
     </div>
   )
 }
