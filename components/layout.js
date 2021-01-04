@@ -5,7 +5,7 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <div className="bg-off-white min-h-screen">
-        <Alert preview={preview} />
+        {/* <Alert preview={preview} /> */}
         <main>{children}</main>
       </div>
     </>

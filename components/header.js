@@ -18,23 +18,23 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <div className="grid grid-cols-7 mt-8 mb-24">
-      <div className="col-start-1 col-span-1">
+    <div className="flex-col flex items-center sm:grid sm:grid-cols-7 sm:mb-24">
+      <div className="sm:col-start-1 sm:col-span-1 mt-10">
         <Link href="/">
           <img className="cursor-pointer w-20 h-24 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110"src="https://www.datocms-assets.com/39720/1609114449-kobejumpshot-removebg-preview.png"></img>
         </Link>
       </div>
-      <div className="cursor-pointer font-bold underline col-start-2 col-span-1 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
+      <div className="sm:cursor-pointer font-bold underline sm:col-start-2 sm:col-span-1 mt-10 sm:mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
         <Link href="/posts/power-rankings">     
           <h2 className="">POWER RANKINGS</h2>     
         </Link>
       </div>
-      <div className="cursor-pointer font-bold underline col-start-3 col-span-1 ml-1 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
+      <div className="sm:cursor-pointer font-bold underline sm:col-start-3 sm:col-span-1 sm:ml-1 mt-5 sm:mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
         <Link href="/posts/gm-of-the-week">     
           <h2 className="">GM OF THE WEEK</h2>     
         </Link>
       </div>
-      <div className="cursor-pointer font-bold underline col-start-4 col-span-1 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
+      <div className="cursor-pointer font-bold underline sm:col-start-4 sm:col-span-1 mt-5 sm:mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
         <Link href="/posts">     
           <h2 className="">ALL POSTS</h2>     
         </Link>
