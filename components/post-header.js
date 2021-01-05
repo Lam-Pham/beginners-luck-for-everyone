@@ -27,7 +27,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
       </div>
       
       <div className="text-center">
-        <div className="w-7/12 inline-flex my-12">
+        <div className="w-auto lg:w-3/4 xl:w-7/12 inline-flex mt-5 mb-12 md:my-12">
           <CoverImage
             responsiveImage={coverImage.responsiveImage}
           />

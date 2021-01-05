@@ -18,12 +18,12 @@ export default function PostPreview({
           responsiveImage={coverImage.responsiveImage}
         />
       </div>
-      <h3 className="text-3xl mb-2 leading-snug">
+      <h3 className="text-xl md:text-2xl mb-2 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
       </h3>
-      <div className="text-lg mb-2">
+      <div className="text-base md:text-lg mb-2">
         <Date dateString={date} />
       </div>
     </div>

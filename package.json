@@ -13,6 +13,7 @@
     "next": "^10.0.1",
     "node-gyp": "^7.1.2",
     "react": "^17.0.1",
+    "react-burger-menu": "^3.0.2",
     "react-datocms": "1.4.5",
     "react-dom": "^17.0.1",
     "tiny-json-http": "^7.3.0"

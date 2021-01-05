@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { renderMetaTags, useQuerySubscription } from "react-datocms";
 import Container from "../../components/container";
-import Header from "../../components/header";
+import LogoHeader from "../../components/logo-header";
 import Layout from "../../components/layout";
-import Footer from "../../components/footer";
+import StaticFooter from "../../components/static-footer";
 import MoreStories from "../../components/more-stories";
 import { request } from "../../lib/datocms";
 import { metaTagsFragment, responsiveImageFragment } from "../../lib/fragments";
@@ -75,10 +75,10 @@ export default function Index({ subscription }) {
       <Layout preview={subscription.preview}>
         <Head>{renderMetaTags(metaTags)}</Head>
         <Container>
-          <Header />
+          <LogoHeader />
           {allPosts.length > 0 && <MoreStories posts={allPosts} />}
         </Container>
-        <Footer/>
+        <StaticFooter/>
       </Layout>
     </>
   );
