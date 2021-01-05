@@ -6,24 +6,34 @@ import PostTitle from '../components/post-title'
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
     <>
+
       <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12">
-        <Avatar name={author.name} picture={author.picture} />
-      </div>
-      <div className="mb-8 md:mb-16 -mx-5 sm:mx-0">
-        <CoverImage
-          title={title}
-          responsiveImage={coverImage.responsiveImage}
-        />
-      </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block md:hidden mb-6">
-          <Avatar name={author.name} picture={author.picture} />
+
+      <div className="text-center">
+        <div className="inline-flex">
+          <p className="mb-2 text-base">  
+            By:&nbsp;
+          </p>
+          <div className="mb-2 text-base">
+              <Avatar name={author.name}/>
+          </div>
+          <p className="mb-2 text-base">  
+            &nbsp;&nbsp;|&nbsp;&nbsp; 
+          </p>
+          <div className=" mb-2 text-base">
+              <Date dateString={date} />
+          </div>
         </div>
-        <div className="mb-6 text-lg">
-          <Date dateString={date} />
+      </div>
+      
+      <div className="text-center">
+        <div className="w-auto lg:w-3/4 xl:w-7/12 inline-flex mt-5 mb-12 md:my-12">
+          <CoverImage
+            responsiveImage={coverImage.responsiveImage}
+          />
         </div>
       </div>
+
     </>
   )
 }

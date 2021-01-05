@@ -1,14 +1,12 @@
 import Head from "next/head";
 import { renderMetaTags, useQuerySubscription } from "react-datocms";
-import Container from "../components/container";
-import HeroPost from "../components/hero-post";
-import Header from "../components/header";
-import Layout from "../components/layout";
-import Footer from "../components/footer";
-import MoreStories from "../components/more-stories";
-import { request } from "../lib/datocms";
-import { metaTagsFragment, responsiveImageFragment } from "../lib/fragments";
-import HomePage from "../components/home-page";
+import Container from "../../components/container";
+import LogoHeader from "../../components/logo-header";
+import Layout from "../../components/layout";
+import StaticFooter from "../../components/static-footer";
+import MoreStories from "../../components/more-stories";
+import { request } from "../../lib/datocms";
+import { metaTagsFragment, responsiveImageFragment } from "../../lib/fragments";
 
 export async function getStaticProps({ preview }) {
   const graphqlRequest = {
@@ -70,8 +68,6 @@ export default function Index({ subscription }) {
     data: { allPosts, site, blog },
   } = useQuerySubscription(subscription);
 
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
   const metaTags = blog.seo.concat(site.favicon);
 
   return (
@@ -79,10 +75,10 @@ export default function Index({ subscription }) {
       <Layout preview={subscription.preview}>
         <Head>{renderMetaTags(metaTags)}</Head>
         <Container>
-          <Header />
-          <HomePage />
+          <LogoHeader />
+          {allPosts.length > 0 && <MoreStories posts={allPosts} />}
         </Container>
-        <Footer/>
+        <StaticFooter/>
       </Layout>
     </>
   );
