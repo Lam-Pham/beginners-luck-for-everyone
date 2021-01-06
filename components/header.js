@@ -19,7 +19,12 @@ export default function Header() {
            <h2 className="">GM OF THE WEEK</h2>     
          </Link>
        </div>
-       <div className="cursor-pointer font-bold underline md:col-start-4 md:col-span-1 mt-5 md:mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
+       <div className="md:cursor-pointer font-bold underline md:col-start-4 md:col-span-1 md:ml-1 mt-5 md:mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
+         <Link href="/posts/league-records">     
+           <h2 className="">LEAGUE RECORDS</h2>     
+         </Link>
+       </div>
+       <div className="cursor-pointer font-bold underline md:col-start-5 md:col-span-1 mt-5 md:mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110">
          <Link href="/posts">     
            <h2 className="">ALL POSTS</h2>     
          </Link>
