@@ -1,14 +1,14 @@
 # Beginner's Luck for Everyone
 
-beginnersluckforeveryone.vercel.app
+[beginnersluckforeveryone.vercel.app](beginnersluckforeveryone.vercel.app)
 
-### Built with...
+### built with...
 
 - Next.js
 - DatoCMS and its GraphQL API
 - Vercel for deployment
 
-### Cool stuff I learned along the way
+### some cool stuff I learned along the way...
 
 - JAMSTACK development
 - the magic of pre-rendering 
