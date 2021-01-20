@@ -1,6 +1,6 @@
 # Beginner's Luck for Everyone
 
-[beginnersluckforeveryone.vercel.app](beginnersluckforeveryone.vercel.app)
+[beginnersluckforeveryone.vercel.app](https://beginnersluckforeveryone.vercel.app/)
 
 ### built with...
 
