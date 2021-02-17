@@ -1,11 +1,9 @@
 import Head from "next/head";
 import { renderMetaTags, useQuerySubscription } from "react-datocms";
 import Container from "../components/container";
-import HeroPost from "../components/hero-post";
 import Header from "../components/header";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
-import MoreStories from "../components/more-stories";
 import { request } from "../lib/datocms";
 import { metaTagsFragment, responsiveImageFragment } from "../lib/fragments";
 import HomePage from "../components/home-page";
