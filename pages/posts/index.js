@@ -75,7 +75,7 @@ export default function Index({ subscription }) {
       <Layout preview={subscription.preview}>
         <Head>{renderMetaTags(metaTags)}</Head>
         <Container>
-          <LogoHeader />
+          <LogoHeader page="ap"/>
           {allPosts.length > 0 && <MoreStories posts={allPosts} />}
         </Container>
         <StaticFooter/>

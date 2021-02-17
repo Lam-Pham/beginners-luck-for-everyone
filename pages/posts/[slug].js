@@ -104,12 +104,22 @@ export default function Post({ subscription, preview }) {
   } = useQuerySubscription(subscription);
 
   const metaTags = post.seo.concat(site.favicon);
+  var slug = ""
+  if (post.slug.includes("power-rankings")) {
+    slug += "pr";
+  }
+  else if (post.slug.includes("gm-of-the-week")){
+    slug += "gm";
+  }
+  else {
+    slug += "lr"
+  }
 
   return (
     <Layout preview={preview}>
       <Head>{renderMetaTags(metaTags)}</Head>
       <Container>
-        <LogoHeader />
+        <LogoHeader page={slug}/>
         <article>
           <PostHeader
             title={post.title}
